@@ -1,0 +1,83 @@
+.product-item {
+    height: 270px;
+    position: relative;
+    border-radius: 10px;
+    transition: 3s ease-in-out;
+    box-shadow: 1 1 10px rgb(0, 0, 0);
+}
+
+.ovelay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(175, 173, 173, 0.732);
+    border-radius: 10px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.product-item:hover .product-desc, 
+.product-item:hover .product-icon,
+.product-item:hover .ovelay {
+    visibility: visible;
+}
+
+.product-img {
+    width: 20px;
+}
+  
+.product-icon {
+    width: 55px;
+    height: 44px;
+    z-index: 1;
+    background: var(--green-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    opacity: 0.8;
+    visibility: hidden;
+}
+
+.product-icon:hover {
+    opacity: 1;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+.product-desc {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    visibility: hidden;
+    z-index: 1;
+    padding: 16px 0;
+}
+
+.product-desc .mon {
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    padding: 4px 0 0 0;
+}
+
+.product-desc span {
+    display: inline-block;
+    color: #ddd;
+    font-weight: 600;
+    padding: 4px 0 0 0;
+}
+  
+.product-desc p {
+    line-height: 1.2;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;
+}

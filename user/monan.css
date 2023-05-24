@@ -1,0 +1,30 @@
+*{
+    margin:auto;
+    padding:0px;
+    width:1200px;
+}
+header{
+    width:1200px;
+    line-height:100px;
+    background-color:red;
+}
+nav a{
+    height: 50px;
+    
+}
+nav ul li{
+    padding:0px 70px;
+    width: 100px;
+    background-color: aqua;
+    float:left;
+    color: black;
+    line-height: 40px;
+}
+nav ul a:hover li{
+    background-color: azure;
+    color: brown;
+}
+
+table{
+    clear: both;
+}

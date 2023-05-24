@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chương trình khuyến mãi</title>
+    <!-- css -->
+    <!--icon-->
+    <link href="css/all.min.css" rel="stylesheet">
+    <!--CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--css của mình tự viết-->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- js -->
+    <script language="javascript" src=""></script>
+</head>
+
+<body>
+    <div class="container-xl">
+        <div class="row">
+            <!--<div class = "col-3"></div>-->
+            <div class="col-xl-10 offset-xl-1">
+                <div class="login-title text-bg-warning py-3 mt-5">
+                    <h3 class="text-center fw-bold textt-uppercase"><i class="fa-solid fa-user-tie"></i>&nbsp;THÊM CHƯƠNG TRÌNH KHUYẾN MÃI</h3>
+                </div>
+            </div>
+            <!--<div class = "col-3"></div>-->
+        </div>
+
+        <div class="row">
+            <div class="col-xl-10 offset-sm-1 ">
+                <div class="login-form text-bg-light py-2">
+                    <form class="px-3" action="khuyenmai.php" method="post" id="km">
+                        <div class="row py-2 ">
+                            <div class="col-sm-4 text-end fs-5">Tên chương trình khuyến mãi</div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="tenkm" id="" />
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-sm-4 text-end fs-5">Ngày bắt đầu</div>
+                            <div class="col-sm-6">
+                                <input type="date" class="form-control" name="ngaybd" id="" />
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-sm-4 text-end fs-5">Ngày kết thúc</div>
+                            <div class="col-sm-6">
+                                <input type="date" class="form-control" name="ngaykt" id="" />
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-sm-4 text-end fs-5">Phần trăm khuyến mãi (%)</div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="ptkm" id="" />
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-sm-12 text-center fs-5">
+                                <button type="reset" class="btn btn-secondary fw-semibold"><i class="fa-solid fa-xmark"></i> Xóa</button>
+                                <button type="button" class="btn btn-primary fw-semibold" onclick="themkm()"><i class="fa-solid fa-right-to-bracket"></i> Thêm khuyến mãi</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function themkm() {
+            var check = confirm("Bạn có chắc chắn thêm chương trinhg khuyến mãi này");
+            if (check) {
+                document.getElementById("km").submit();
+            }
+        }
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+/*--------------------------------------------------------------
+# Event List
+--------------------------------------------------------------*/
+.event-list .card {
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .event-list .card-img {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+  }
+  
+  .event-list .card-img img {
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .event-list .card-body {
+    z-index: 10;
+    background: #fff;
+    border-top: 4px solid #fff;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -60px;
+    transition: 0.3s;
+    border-radius: 4px;
+  }
+  
+  .event-list .card-title {
+    font-weight: 700;
+    text-align: center;
+    color: #364d59;
+    font-size: 24px;
+  }
+  
+  .event-list .card-sale {
+    text-align: center;
+    background-color: var(--green-color);
+    border-radius: 20px;
+    width: 124px;
+    height: 72px;
+    line-height: 72px;
+    color: #364d59;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    margin: 16px 0;
+  }
+  
+  .event-list .card-text {
+    color: var(--green-color);
+  }
+
+  .event-list .card-text .card-time {
+    color: #364d59;
+    font-weight: 600;
+  }
+  
+  .event-list .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .event-list .card:hover .card-body {
+    border-color: var(--green-color);
+  }
+  
+  .event-list .card:hover .card-body .card-title {
+    color: var(--green-color);
+  }
+
+  .event-list .card:hover .card-body .card-sale {
+    color: var(--green-color);
+    background-color: #364d59;
+    transform: scale(1.1);
+  }
+  

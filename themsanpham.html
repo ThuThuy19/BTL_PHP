@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm sản phẩm</title>
+    <!-- css -->
+    <!--icon-->
+    <link href="css/all.min.css" rel="stylesheet">
+    <!--CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--css của mình tự viết-->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- js -->
+    <script language="javascript" src=""></script>
+</head>
+
+<body>
+    <h3 class="contarner fw-bold text-center" style="margin-top: 30px;">Thêm sản phẩm</h3>
+    <div class=" container col-8 text-center" style="padding-left: 80px;">
+        <div class="container">
+            <form class="text-center" action="themsanpham.php" method="post" align="center" width="100%" border="1px" enctype="multipart/form-data">
+                <table width="80%" class=" text-bg-light text-center" style="border-radius: 10px;">
+                    <tr>
+                        <td style="text-align: left; padding-left:20px;" class="fw-bold col-xl-4">Tên món ăn: </td>
+                        <td class="py-1"><input class="form-control " type="text" name="tenMon"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; padding-left:20px;" class="fw-bold col-xl-4">Giá bán: </td>
+                        <td class="py-1"><input class="form-control" type="text" name="giaMon"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; padding-left:20px;" class="fw-bold col-xl-4">Hình ảnh: </td>
+                        <td class="py-1"><input class="form-control" type="file" name="hinhAnh"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; padding-left:20px;" class="fw-bold col-xl-4">Mô tả món ăn: </td>
+                        <td class="py-1">
+                            <input class="form-control" type="text" name="mota">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-center"><button class="btn btn-primary" type="submit">Thêm</button> <button class="btn btn-danger" type="reset">Xóa</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.all{
+    margin:auto;
+    width:1200px;
+}
+
+/* header*/
+.header-line-on-top{ /*tao chieu cao dong va mau */
+    line-height: 60px;
+    background-color: aqua;
+}
+
+header form{
+    float: right;
+}
+
+.name-spa{
+    float: left;
+}
+
+.header-line-on-top img{
+    position: relative;
+    left:300px;
+}
+.infor-spa {
+    float: right;
+    padding:auto 20px;  
+    color:red;
+}
+
+
+/* menu */
+
